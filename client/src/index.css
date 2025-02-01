@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+h3{
+  margin: 0;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  gap:4rem;
+}
+
+.header button{
+  border: none;
+  background-color: #00a01d;
+  padding: 5px 10px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.top-pane{
+  background-color: hsl(225,6%,25%);
+}
+
+.pane{
+  height: 50vh;
+  display: flex;
+}
+
+.editor-container{
+  flex-grow:1;
+  width: 33%;
+  flex-basis:0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background-color: hsl(225,6%,25%);
+  transition : flex-grow 0.6s linear
+
+}
+
+.editor-container.collapsed{
+  flex-grow: 0.12;
+  transition : flex-grow 0.6s linear
+
+}
+
+.editor-container.collapsed .CodeMirror-scroll{ 
+   position :absolute;
+   overflow:hidden !important;
+}
+
+.expand-compress-btn{
+  
+  background-color: hsl(225,6%,13%);
+  border: none;
+  margin-left: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+.editor-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225,6%,13%);
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  color: white;
+}
+
+.CodeMirror{
+  height: 100% !important;
+}
+
+.code-mirror-wrapper{
+  flex-grow :1;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  overflow: hidden;
+}
