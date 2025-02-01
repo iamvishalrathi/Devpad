@@ -29,7 +29,7 @@ Welcome to DevPad, a real-time collaborative web application for writing and tes
 
 ## Contact
 
-For any inquiries or issues, please contact us at [winkhatri292004@gmail.com](mailto:winkhatri292004@gmail.com).
+For any inquiries or issues, please contact us at [rajatrathi029@gmail.com](mailto:rajatrathi029@gmail.com).
 
 ---
 
